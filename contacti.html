@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contact-info {
+    max-width: 400px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+.contact-info ul {
+    padding-left: 20px;
+}
+
+.contact-info ul li {
+    list-style-type: disc;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+    
+.navbar ul{
+       background-color:dodgerblue;
+        margin: 0px;
+       padding: 0px;
+       overflow:hidden;
+      
+     }
+    .navbar  a{
+        color: aliceblue;
+        text-decoration: none; 
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-size:x-large;
+        text-transform:uppercase;
+    }   
+    .navbar a:hover{
+        background-color: blue;
+    }
+    .navbar li{
+        float:right;
+        list-style-type:none;
+    }
+
+</style>
+<body>
+    <nav class="navbar">
+    
+        <ul>
+            <li><a href="reservation.html">Reservation</a></li>
+             <li><a href="contacti.html">contact</a></li>
+            <li><a href="a propos.html">A propos</a></li>
+            <li><a href="tt1.html">Mennu</a></li>
+            <li><a href="tt2.html">Acceil</a></li>
+        </ul>
+       </nav>
+       <hr size="3" color="orange" >
+    <section id="contact">
+        <h1>Nous contacter</h1>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><strong>Adresse :</strong> 536 teboulba ,monestir, cheri3 il jomhouriya</p>
+                <p><strong>Téléphone :</strong> 20 358 197</p>
+                <p><strong>Email :</strong> israbayoudh144@gmail.com</p>
+                <p><strong>Horaires d'ouverture :</strong></p>
+                <ul>
+                    <li>Lundi - Vendredi : 12h - 14h, 19h - 22h</li>
+                    <li>Samedi : 12h - 15h, 19h - 23h</li>
+                    <li>Dimanche : Fermé</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
